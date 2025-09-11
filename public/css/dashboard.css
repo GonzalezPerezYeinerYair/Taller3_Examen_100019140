@@ -1,9 +1,12 @@
 body {
     font-family: Arial, sans-serif;
     background-color: rgb(64, 65, 63);
-    margin: 0;
-    padding: 0;
-} 
+    display: flex;
+    justify-content: center; /* centra horizontal */
+    align-items: center;     /* centra vertical */
+    height: 100vh;           /* ocupa toda la altura de la ventana */
+    margin: 0;               /* quita márgenes por defecto */
+}
 .titulo {
     text-align: center;
     color: red;
@@ -13,6 +16,23 @@ body {
 
 .parrafo {
     text-align: center;
-    color: white;
+    color: black;
     margin-top: 10px;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.container:hover {
+    transition: all 0.5s ease;
+    background-color: rgb(19, 72, 141);
+    box-shadow: 0 6px 12px rgba(42, 44, 122, 0.3);
+    .titulo {
+        color: white;
+    }    
 }
